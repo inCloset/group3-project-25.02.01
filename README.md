@@ -74,13 +74,13 @@ This project aims to analyze the unemployment rate in the United States, focusin
    - Employment Levels: Strong positive correlation between sectors, indicating synchronized trends.
 
 ### Visualizations
-![unemployment rate and number of employees](image.png)  
-![percentage change during covid](image-1.png)  
-![unemployment rate by industries](image-2.png)  
-![unemployment rate by education level](image-3.png)  
-![unemployment rate by race/ethnicity](image-4.png)  
-![heatmap of AI jobs by industries and states](image-5.png)  
-![AI by countries](newplot.png)
+![unemployment rate and number of employees](images/image.png)  
+![percentage change during covid](images/image-1.png)  
+![unemployment rate by industries](images/image-2.png)  
+![unemployment rate by education level](images/image-3.png)  
+![unemployment rate by race/ethnicity](images/image-4.png)  
+![heatmap of AI jobs by industries and states](images/image-5.png)  
+![AI by countries](images/newplot.png)
 
 ## Data Sources
 - **AI Impact**: [AI-powered Job Market Insights](https://www.kaggle.com/datasets/uom190346a/ai-powered-job-market-insights)  
