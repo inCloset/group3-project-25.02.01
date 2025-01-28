@@ -6,108 +6,105 @@ This project aims to analyze the unemployment rate in the United States, focusin
 
 ## Areas of Investigation
 
-### Mareme's Focus: Impact of AI on the Labor Market
-1. **Impact of AI in the Past 10 Years**
-   - Has AI had a positive or negative impact on the labor market?
-   - Which areas are most affected by AI?
-   - Projections for the next 5 years using Prophet.
+### Impact of AI on the Labor Market
+1. **Impact of AI in the Past 10 Years**  
+   - A heatmap was created to visualize the distribution of AI jobs across various industries and states in 2023. The heatmap uses darker shades to represent higher concentrations of AI jobs. It highlights industries such as Information and Scientific and Technical Services, which show significant numbers of AI jobs in states like California and Massachusetts. This visualization helps identify trends and concentrations of AI employment, which can guide strategic decision-making and workforce development in the AI sector.
+   - A choropleth map was created to visualize the distribution of AI jobs across various countries in 2023. In this map, color intensity indicates the number of AI jobs, with darker shades representing higher concentrations. The map highlights global hotspots for AI employment and provides insights into how different countries are adopting and integrating AI technologies.
 
-### Frank's Focus: Unemployment and Economy/Industry Sectors
-1. **Unemployment and Industry Sectors**
-   - How does unemployment vary across different industry sectors?
-   Unemployment is often affected differently across various industry sectors, as economic conditions, technological advances, globalization, and other factors impact sectors in unique ways. Here’s an overview of how unemployment trends might vary across industries and why:
-   1. Cyclicality of the Industry
-      Highly Cyclical Industries:
-         Sectors like construction, manufacturing, and hospitality are often more sensitive to economic cycles.
-         During recessions, demand for discretionary goods and services drops, causing layoffs in these industries.
-         For example, construction projects may be delayed or canceled, and manufacturing plants may scale down operations.
-         Resilient Industries:
-         Sectors like healthcare, education, and utilities are less affected by economic downturns because they provide essential services that remain in demand.
-   2. Technology and Automation
-      Industries Vulnerable to Automation:
-         Manufacturing, retail, and transportation are particularly affected by technological advancements that replace human labor with machines or AI.
-         This can lead to structural unemployment, where workers' skills no longer match job requirements.
-      Industries Benefiting from Technology:
-         Technology, finance, and renewable energy sectors often see job growth due to innovation, requiring a skilled workforce.
-   3. Pandemics and Disruptions
-   Pandemic-Impacted Sectors:
-         The COVID-19 pandemic severely affected sectors like travel, hospitality, entertainment, and retail due to lockdowns and reduced consumer spending.
-         At the same time, demand surged in sectors like e-commerce, healthcare, and logistics.
-   
-   - How do unemployment rates differ by education level (e.g., high school diploma, bachelor's degree, master's degree)?
+### Unemployment and Economy/Industry Sectors
+1. **Unemployment and Industry Sectors**  
+   Unemployment is often affected differently across various industry sectors, as economic conditions, technological advances, globalization, and other factors impact sectors in unique ways.  
+   - **Cyclicality of the Industry**  
+      - Highly Cyclical Industries: Construction, manufacturing, and hospitality are more sensitive to economic cycles. Recessions reduce demand for discretionary goods, leading to layoffs.  
+      - Resilient Industries: Healthcare, education, and utilities are less affected due to the essential services they provide.  
+   - **Technology and Automation**  
+      - Vulnerable Industries: Manufacturing, retail, and transportation face structural unemployment due to automation.  
+      - Benefiting Industries: Technology, finance, and renewable energy often see growth due to innovation.  
+   - **Pandemics and Disruptions**  
+      - COVID-19 severely affected travel, hospitality, and retail while boosting demand in e-commerce, healthcare, and logistics.
 
-   Unemployment rates tend to vary significantly by education level, as higher levels of education often correlate with better job prospects, lower unemployment rates, and higher wages. Here's an overview of how education level impacts unemployment, and how you can analyze it using data:
+2. **Unemployment by Education Level**  
+   Higher education levels generally correlate with better job prospects, lower unemployment, and higher wages:  
+   - **Lower Education Levels**: Highest unemployment rates, with jobs vulnerable to outsourcing and automation.  
+   - **High School Graduates**: Moderate unemployment rates in sectors like construction and retail.  
+   - **Some College or Associate's Degree**: Improved employability in healthcare and IT support.  
+   - **Bachelor's Degree or Higher**: Lowest unemployment rates, with opportunities in technology, healthcare, and finance.  
 
-   General Trends in Unemployment by Education Level:
-   1. Lower Education Levels:
+3. **Unemployment by Race/Ethnicity**  
+   The Bureau of Labor Statistics (BLS) reports significant disparities:  
+   - **Black or African American**: Highest unemployment rates.  
+   - **Hispanic or Latino**: Higher than White but lower than Black workers.  
+   - **White**: Lower overall unemployment rates.  
+   - **Asian**: Lower rates but significant diversity within the group.
 
-   Individuals without a high school diploma often experience the highest unemployment rates.
-   Jobs available to this group are often low-skill and vulnerable to economic downturns, outsourcing, and automation.
+4. **Trends and Implications**  
+   - **Demand for Higher Education**: Technological advancements favor STEM fields and specialized skills.  
+   - **Digital Divide**: Lack of access to technology disproportionately affects lower-educated workers.  
+   - **COVID-19 Pandemic**: Accelerated trends like remote work and automation, disproportionately impacting low-skill jobs.
 
-   2. High School Graduates (No College):
-      The unemployment rate is lower than for those without a diploma but higher than for those with college education.
-      Many jobs in this category are in industries like construction, manufacturing, and retail.
+### Impact of COVID-19 on Unemployment
+1. **Percentage Changes During COVID-19**  
+   - **Unemployment Rate**: Increased by 83.1%.  
+   - **Average Hourly Wages**:  
+      - Leisure: +7.2%  
+      - Manufacturing: +5.6%  
+      - Finance: +8.5%  
+      - Information: +4.6%  
+   - **Number of Employees**:  
+      - Leisure: -17.8%  
+      - Manufacturing: -4.3%  
+      - Finance: +0.02%  
+      - Information: -2.6%  
 
-   3. Some College or Associate's Degree:
+2. **Percentage Changes Post COVID-19**  
+   - **Unemployment Rate**: Decreased by 1.0%.  
+   - **Average Hourly Wages**:  
+      - Leisure: +24.8%  
+      - Manufacturing: +14.4%  
+      - Finance: +18.3%  
+      - Information: +12.5%  
+   - **Number of Employees**:  
+      - Leisure: -2.3%  
+      - Manufacturing: +0.5%  
+      - Finance: +4.3%  
+      - Information: +6.3%  
 
-      This group typically experiences moderate unemployment rates, as additional education or technical training improves employability.
-      Common industries include healthcare, IT support, and skilled trades.
-   
-   4. Bachelor's Degree and Higher:
+3. **Correlation During COVID-19**  
+   - Unemployment Rate: Strong negative correlation with employment levels.  
+   - Employment Levels: Strong positive correlation between sectors, indicating synchronized trends.
 
-      Individuals with a bachelor's degree or higher have the lowest unemployment rates, as they often qualify for high-skill, high-demand jobs.
-      Industries such as finance, technology, healthcare, and education dominate.
-
-   - How do unemployment rates for different education levels vary by region or state?
-      In the United States, the Bureau of Labor Statistics (BLS) reports unemployment rates by race/ethnicity in its Current Population Survey (CPS). The main racial/ethnic categories include:
-
-         Black or African American: Consistently higher unemployment rates compared to other groups.
-         Hispanic or Latino: Higher rates than White workers but often lower than Black workers.
-         White: Lower unemployment rates overall.
-         Asian: Lower unemployment rates but with significant diversity within the group.
-      
-   - How do changes in technology and industry demands influence the relationship between education levels and unemployment rates?
-   1. Demand for Higher Education and Specialized Skills
-         Technological Advancements:
-            Automation, artificial intelligence (AI), and machine learning have replaced many routine, manual, or low-skill jobs (e.g., assembly line work, data entry). This displacement disproportionately affects workers with lower education levels.
-            In contrast, industries like technology, healthcare, and engineering require specialized skills and higher education, favoring those with bachelor’s degrees or higher.
-         STEM Fields:
-            Growth in science, technology, engineering, and math (STEM) occupations has created opportunities for highly educated workers, further widening the gap in unemployment rates between those with and without higher education.
-   2. Digital Divide and Inequity
-         Access to Technology:
-            The digital divide disproportionately affects lower-educated workers, who may lack the resources or skills to adapt to technology-driven jobs.
-            Online job applications and remote work opportunities often favor tech-savvy individuals with higher education levels.
-   3. Economic Shocks and Accelerated Trends
-         COVID-19 Pandemic:
-            Accelerated the adoption of remote work and automation.
-            Workers in jobs requiring in-person presence (e.g., retail, hospitality) faced significant layoffs. Those with higher education were more likely to adapt to remote work and retain employment.
-
-### Mike's Focus: Impact of COVID-19 on Unemployment
-1. **Impact of COVID-19 on Unemployment**
-   - How has COVID-19 impacted the job market?
-   - What were the specific industries most impacted?
-
-## Visualizations
-Each team member will create two visualizations related to their area of investigation.
+### Visualizations
+![unemployment rate and number of employees](images/image.png)  
+![percentage change during covid](images/image-1.png)  
+![unemployment rate by industries](images/image-2.png)  
+![unemployment rate by education level](images/image-3.png)  
+![unemployment rate by race/ethnicity](images/image-4.png)  
+![heatmap of AI jobs by industries and states](images/image-5.png)  
+![AI by countries](images/newplot.png)
 
 ## Data Sources
-- **AI Impact**: Research articles, industry reports, and data from AI companies.
-- **Industry Sectors**: Bureau of Labor Statistics (BLS), industry reports.
-- **Education Levels**: Census data, BLS reports.
-- **COVID-19 Impact**: CDC data, unemployment reports, industry studies.
+- **AI Impact**: [AI-powered Job Market Insights](https://www.kaggle.com/datasets/uom190346a/ai-powered-job-market-insights)  
+- **Industry Sectors**: [Bureau of Labor Statistics API](https://www.bls.gov/developers/api_signature_v2.htm#single)  
+- **Education Levels**: [BLS and Census Data](https://www.bls.gov/developers/api_signature_v2.htm#single)  
+- **COVID-19 Impact**: [CDC and BLS Data](https://www.bls.gov/developers/api_signature_v2.htm#single)
 
 ## Methodology
-- Data Collection: Gather relevant data from the sources mentioned above.
-- Data Analysis: Use statistical tools and software (e.g., Python, R) to analyze the data.
-- Visualization: Create visualizations using tools like Tableau, Matplotlib, or Power BI.
+- **Data Collection**: CSV file downloads and API requests.  
+- **Data Analysis**: Pandas for data manipulation and analysis.  
+- **Visualization**: Matplotlib, Prophet, and Tableau for plotting trends and predictions.  
 
 ## Conclusion
-Summarize the findings from each area of investigation and provide insights into the overall trends and implications for the labor market.
+- **AI Job Trends**:  
+   - Growth in states like California and Massachusetts highlights the importance of tech hubs.  
+   - Globally, AI hotspots are concentrated in nations investing heavily in R&D and education.  
+- **Economic Impact of COVID-19**:  
+   - Uneven sector recovery highlights the need for targeted workforce development.  
+   - Wage growth reflects labor market adjustments post-pandemic.  
+- **Strategic Implications**:  
+   - Invest in education and upskilling for AI and technology sectors.  
+   - Support industries like leisure and hospitality, which remain vulnerable to economic shocks.
 
 ## Contributors
-- **Mareme**: Research on AI impact.
-- **Frank**: Analysis of unemployment by industry and education levels.
+- **Mareme**: Research on AI impact.  
+- **Frank**: Analysis of unemployment by industry and education levels.  
 - **Mike**: Study on the impact of COVID-19 on unemployment.
-
-
-
